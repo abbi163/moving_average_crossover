@@ -1,6 +1,7 @@
 # Moving Average Crossover Trading strategy!
 
 import os
+import numpy as np
 import pandas as pd
 
 # wealth_return function takes stock data as input and return buy price and net profit as output
@@ -43,5 +44,10 @@ for file in files:
         except (KeyError, IndexError):
             print(file)
 stock_result = pd.DataFrame(data = result, columns = ['Symbol', 'Buy_price', 'Net_wealth', 'Profit_ratio'])   
-stock_result.to_csv('Stock_gain_loss/' + year + '.csv', index = None)
+
+# merging the files to show sector wise result
+data = pd.read_csv('S&P500_ticker.csv')
+final_result = stock_result.merge(data, left_on='Symbol', right_on='Symbol')
+final_result.to_csv('Stock_gain_loss/' + year + '.csv', index = None)
+
 
