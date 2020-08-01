@@ -21,11 +21,29 @@ Here "aapl" is daily OHLC data of Apple stock.
 
 The tutorial of how to use moving average is explained in the file [**'notebook/Moving_average_crossover.ipynb'**](https://github.com/abbi163/moving_average_crossover/blob/master/notebook/Moving_average_crossover.ipynb). 
 
-Python script where moving average crossover strategy is applied to all the data is given in **Moving_average_crossover.py**
+Python script where moving average crossover strategy is applied to all the data is given in [**Moving_average_crossover.py**](https://github.com/abbi163/moving_average_crossover/blob/master/Moving_average_crossover.py)
 
 ### Data Collection of S&P 500 stocks!
 
+For data collection we will be using yfinance module. 
+To install it we will be using following bash command
 
+```bash
+pip install yfinance
+```
+
+yfinance need stock ticker symbol, start date and end data to download the OHLC, adusted close and volume data. 
+
+```python
+import yfinance
+symbol = 'AAPL'
+start_date = '2019-01-01'
+end_date = '2020-06-01'
+stock_data = yfinance.download( symbol, 
+                                start = start_date, 
+                                end = end_date, 
+                                progress=False)
+```
 
 
 
