@@ -45,5 +45,8 @@ stock_data = yfinance.download( symbol,
                                 progress=False)
 ```
 
+The tutorial of how to use collect stock data is explained in the file [**'notebook/S&P500_data.ipynb'**](https://github.com/abbi163/moving_average_crossover/blob/master/notebook/S%26P500_data.ipynb). 
+
+Python script where S&P500 data is downloaded for all the [stock tickers](https://github.com/abbi163/moving_average_crossover/blob/master/S%26P500_ticker.csv) is given here [**S&P500_data.py**](https://github.com/abbi163/moving_average_crossover/blob/master/S%26P500_data.py)
 
 
