@@ -24,6 +24,7 @@ The tutorial of how to use moving average is explained in the file [**'notebook/
 Python script where moving average crossover strategy is applied to all the data is given in [**Moving_average_crossover.py**](https://github.com/abbi163/moving_average_crossover/blob/master/Moving_average_crossover.py)
 
 ### Data Collection of S&P 500 stocks!
+-------------------------------------------------
 
 For data collection we will be using yfinance module. 
 To install it we will be using following bash command
@@ -49,4 +50,7 @@ The tutorial of how to use collect stock data is explained in the file [**'noteb
 
 Python script where S&P500 data is downloaded for all the [stock tickers](https://github.com/abbi163/moving_average_crossover/blob/master/S%26P500_ticker.csv) is given here [**S&P500_data.py**](https://github.com/abbi163/moving_average_crossover/blob/master/S%26P500_data.py)
 
+### Result 
+----------------------------
 
+Finally the result of net wealth and wealth ratio for all the stocks are save in [Stock_gain_loss](https://github.com/abbi163/moving_average_crossover/tree/master/Stock_gain_loss) folder as csv files for given year. 
