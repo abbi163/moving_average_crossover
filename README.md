@@ -19,7 +19,7 @@ aapl.head(2)
 
 Here "aapl" is daily OHLC data of Apple stock.  
 
-The tutorial of how to use moving average is explained in the file **'notebook/Moving_average_crossover.ipynb'**. 
+The tutorial of how to use moving average is explained in the file [**'notebook/Moving_average_crossover.ipynb'**](https://github.com/abbi163/moving_average_crossover/blob/master/notebook/Moving_average_crossover.ipynb). 
 
 Python script where moving average crossover strategy is applied to all the data is given in **Moving_average_crossover.py**
 
